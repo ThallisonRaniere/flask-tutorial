@@ -4,10 +4,6 @@
 <nav>
   <h1>Flaskr</h1>
   <ul>
-      <h1>{{ g.__dict__ }}</h1>
-      <h2>{{ g.user.id }}</h2>
-      <h2>{{ g.user.username }}</h2>
-      <h2>{{ g.user.password }}</h2>
     {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>
       <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
